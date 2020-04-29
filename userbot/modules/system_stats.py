@@ -134,7 +134,7 @@ async def amireallyalive(alive):
     await alive.edit(
                      f"══════════════════════\n"
                      " Hi, I am alive \n"
-                     " {DEFAULTUSER} is Online Now \n"
+                     " @okta_10 is Online Now \n"
                      f"---------------------------------------\n"
                      f" Maintainer Of: Mystic Kernel \n"
                      f" Current Supported Device: \n"
