@@ -3,6 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
+# thanks to penn5 for bug fixing
 """ Userbot initialization. """
 
 import os
@@ -92,7 +93,7 @@ CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 DB_URI = os.environ.get("DATABASE_URL", None)
 
 # For MONGO based DataBase
-MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+MONGO_URI = os.environ.get("MONGO_URI", None)
 
 # OCR API key
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
@@ -166,7 +167,7 @@ GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
 
 
 # Init Mongo
-MONGOCLIENT = MongoClient(MONGO_DB_URI, 27017, serverSelectionTimeoutMS=1)
+MONGOCLIENT = MongoClient(MONGO_URI, 27017, serverSelectionTimeoutMS=1)
 MONGO = MONGOCLIENT.userbot
 
 
